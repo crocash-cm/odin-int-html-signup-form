@@ -6,7 +6,10 @@
 
 :root 
 {
-    --button-colour: gold;
+    --button-colour: orange;
+    --right-section-padding: 80px;
+    --right-section-bg: lightgrey;
+    --middle-right-bg: white;
 }
 
 @font-face {
@@ -16,35 +19,174 @@
 
 .container 
 {
-    height: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;   
+}
+
+.left-section
+{
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
+    width: 38%;
+    background-image: url(./img/daisies-black-and-white.jpg);
    
 }
 
-section.left-section
-{
-    display: flex;
-    width: 800px;
-    background-image: url(./img/daisies-black-and-white.jpg);
-    align-items: center;
-}
-
-div.logo-container
+.left-section-footer 
 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: auto;
     color: white;
-    font-size: 4rem;
+}
+
+.logo-container
+{
+    display: flex;
+    align-items: center;
+    margin-top: 33%;
+    gap: 20px;
+    justify-content: center;
+    flex-basis: 30%;
+    font-size: 3rem;
     font-family: "LiberStructRegular", Arial;
     width: 100%;
-    height: 26%;
-    background-color: black;
-    opacity: 0.7;
+    background-color: rgba(0,0,0,60%);
+
+}
+
+.right-section
+{
+    display: flex;
+    width: 62%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: var(--right-section-bg);
+}
+
+.top-right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    padding-left: var(--right-section-padding);
+    height: 20%;
+}
+
+.top-right > p 
+{
+    width: 50ch;
+}
+
+.middle-right 
+{
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    padding-top: 50px;
+    padding-left: var(--right-section-padding);
+    background-color: var(--middle-right-bg);
+    box-shadow: 10px 10px 10px 10px darkgrey;
+}
+
+.middle-right > h2
+{
+    padding-bottom: 20px;
+}
+
+.sign-up-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-row 
+{
+    gap: 60px;
+    display: flex;
+}
+
+.label-input-pair
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+label
+{
+    text-transform: uppercase;
+    color: rgb(71, 71, 71);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+input
+{
+    
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    height: 28px;
+    border-color: #E5E7EB;
+    border-radius: 8%;
+    border-style: solid;
+    margin-top: 5px;
+}
+
+:invalid 
+{
+    border-color: red;
+}
+
+:focus
+{
+    box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+.bottom-right
+{
+    padding-left: var(--right-section-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.bottom-right > button 
+{
+    width: 200px;
+    height: 60px;
+    background-color: var(--button-colour);
+    border-radius: 12%;
+    border-color: orange;
+    box-shadow: 5px 5px 10px darkgrey;
+    color: white;
+    font-size: 1.25rem;
+    border-style: solid;
+}
+
+a
+{
+    color: var(--button-colour);
+    text-decoration: none;
 }
 
 #logo-img
 {
+    background-color: white;
     width: 100px;
+    opacity: 1;
+    border-radius: 10% 0%;
+}
+
+#logo-text
+{
+    color: white;
+    opacity: 1;
 }
