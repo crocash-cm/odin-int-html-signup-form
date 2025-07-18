@@ -60,11 +60,9 @@ html
     gap: 1.6vw;
     justify-content: center;
     flex-basis: 30%;
-    font-size: 4vw;
     font-family: "LiberStructRegular", Arial;
     width: 100%;
     background-color: rgba(0,0,0,60%);
-
 }
 
 #logo-img
@@ -77,6 +75,7 @@ html
 
 #logo-text
 {
+    font-size: 4vw;
     color: white;
     opacity: 1;
 }
