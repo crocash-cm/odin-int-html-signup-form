@@ -48,6 +48,7 @@ html
     justify-content: center;
     width: 38%;
     background-image: url(./img/daisies-black-and-white.jpg);
+    background-position: center;
    
 }
 
@@ -187,6 +188,9 @@ input
 
 .middle-right > button 
 {
+    flex-shrink: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 200px;
     height: 60px;
     background-color: var(--button-colour);
