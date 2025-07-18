@@ -10,6 +10,7 @@
     --right-section-padding: 8vw;
     --right-section-bg: hsl(0, 0%, 95%);
     --middle-right-bg: white;
+    --input-colour: rgb(80, 80, 80);
 }
 
 html
@@ -150,7 +151,7 @@ html
 label
 {
     text-transform: uppercase;
-    color: rgb(71, 71, 71);
+    color: var(--input-colour);
     font-size: 0.75rem;
     font-weight: 700;
 }
@@ -162,9 +163,10 @@ input
     background-color: transparent;
     box-shadow: none;
     height: 28px;
-    border-color: #E5E7EB;
+    border-color: var(--input-colour);
     border-radius: 8%;
     border-style: solid;
+    border-width: 1px;
     margin-top: 5px;
 }
 
