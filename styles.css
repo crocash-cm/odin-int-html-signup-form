@@ -51,15 +51,6 @@ html
    
 }
 
-.left-section-footer 
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
-    color: white;
-}
-
 .logo-container
 {
     display: flex;
@@ -82,6 +73,21 @@ html
     width: 8vw;
     opacity: 1;
     border-radius: 10% 0%;
+}
+
+#logo-text
+{
+    color: white;
+    opacity: 1;
+}
+
+.left-section-footer 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    color: white;
 }
 
 .right-section
@@ -208,10 +214,3 @@ a
     text-decoration: none;
 }
 
-
-
-#logo-text
-{
-    color: white;
-    opacity: 1;
-}
