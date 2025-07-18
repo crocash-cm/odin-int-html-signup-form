@@ -118,9 +118,9 @@ html
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     overflow: auto;
-    height: 33%;
-    padding-top: 5vh;
+    height: 48%;
     padding-left: var(--right-section-padding);
     background-color: var(--middle-right-bg);
     box-shadow: 10px 10px 10px 10px darkgrey;
@@ -185,16 +185,7 @@ input
     box-shadow: 5px 5px 5px 5px lightgrey;
 }
 
-.bottom-right
-{
-    padding-left: var(--right-section-padding);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-
-.bottom-right > button 
+.middle-right > button 
 {
     width: 200px;
     height: 60px;
@@ -204,6 +195,15 @@ input
     box-shadow: 5px 5px 10px darkgrey;
     color: white;
     font-size: 1.25rem;
+
+}
+
+.bottom-right
+{
+    padding-left: var(--right-section-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 
