@@ -103,6 +103,7 @@ html
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    gap: 2vw;
     justify-content: space-evenly;
     overflow: auto;
     padding-left: var(--right-section-padding);
@@ -111,7 +112,7 @@ html
 
 .top-right > p 
 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     width: 46vw;
 }
 
